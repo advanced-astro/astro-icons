@@ -1,17 +1,45 @@
 {
-  "name": "astro-component-name",
-  "version": "0.1.0",
+  "name": "astro-icons",
+  "version": "0.8.1",
   "type": "module",
   "exports": {
-    ".": "./index.ts"
+    ".": "./index.ts",
+    "./pack": "./lib/createIconPack.ts"
+  },
   },
   "files": [
-    "src",
+    "lib",
     "index.ts"
   ],
+  "author": {
+    "name": "Rychart Redwerkz",
+    "url": "https://advanced-astro.dev"
+  },
   "keywords": [
-    "astro-component"
+    "astro",
+    "astro-component",
+    "image",
+    "images",
+    "icon",
+    "icons",
+    "iconify",
+    "optimization"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/advanced-astro/astro-iconify.git",
+    "directory": "packages/core"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/advanced-astro/astro-iconify/issues"
+  },
+  "homepage": "https://github.com/advanced-astro/astro-iconify#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.10",
+    "resolve-pkg": "^2.0.0",
+    "svgo": "^3.0.2"
+  }
   "scripts": {
     "test": "mocha --parallel --timeout 15000",
     "format": "prettier -w .",
@@ -37,6 +65,6 @@
     "typescript": "^4.8.3"
   },
   "peerDependencies": {
-    "astro": "^1.0.0"
+    "astro": "^2.0.10"
   }
 }
